@@ -20,7 +20,7 @@
 
 Python 的 `enumerate()` 函数就是用来做这件事的，它可以给列表、元组等可迭代对象中的每个元素添加一个序号，形成一个由序号和元素组成的元组。
 
-**基本用法：**
+### 基本用法：
 
 ```python
 shopping_list = ["牛奶", "鸡蛋", "面包", "苹果"]
@@ -44,7 +44,7 @@ for index, item in enumerate(shopping_list):
 2. `for index, item in ...`:  使用 `for` 循环遍历枚举对象，每次循环会得到一个元组 `(index, item)`，其中 `index` 是序号，`item` 是列表元素。
 3. `print(f"{index + 1}. {item}")`:  将序号加 1 后，与列表元素一起打印出来。
 
-**自定义起始序号：**
+### 自定义起始序号：
 
 `enumerate()` 函数还可以接受一个可选参数 `start`，用来指定起始序号。默认情况下，起始序号是 0。
 
@@ -64,7 +64,7 @@ for index, item in enumerate(shopping_list, start=5):
 8. 苹果
 ```
 
-**总结：**
+### 总结：
 
 `enumerate()` 函数是一个非常实用的工具，它可以帮助你：
 
